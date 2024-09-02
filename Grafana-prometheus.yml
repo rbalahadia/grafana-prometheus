@@ -1,0 +1,10 @@
+---
+-  hosts: local
+   become: true
+   become_user: root
+   connection: local
+   tasks:
+   -  name: Deploying Grafana and Prometheus master
+      shell: sh Role/Setup.sh {{graf_pass}}
+
+  
