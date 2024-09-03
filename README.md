@@ -14,3 +14,6 @@
 5. Check localhost:9090 to access prometheus console via browser.<br>
 6. Access localhost:9100/metrics to see if node_exporter is generating metrics via browser.<br>
 
+
+_Script for installing node_exporter to desired servers.. to follow._
+
