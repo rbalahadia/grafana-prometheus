@@ -1,10 +1,10 @@
 # grafana-prometheus
 </h2>This is an automated way of creating a grafana container alongside prometheus</h2><br>
 Requirements:
-- Ansible
-- Docker
-- docker-compose
-- Linux
+- Ansible<br>
+- Docker<br>
+- docker-compose<br>
+- Linux<br>
 <h3>How to run it in your local/server:</h3>
 1. Clone the latest version 
 2. Update Docker/grafana_prometheus.yml for default username and password of Grafana.
