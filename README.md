@@ -1,5 +1,5 @@
 # grafana-prometheus
-</h2>This is an automated way of creating a grafana container alongside prometheus</h2><br>
+</h2>_This is an automated way of creating a grafana container alongside prometheus_</h2><br>
 <b>Requirements:</b><br>
 - Ansible<br>
 - Docker<br>
