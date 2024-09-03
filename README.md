@@ -5,7 +5,7 @@
 - Docker<br>
 - docker-compose<br>
 - Linux<br>
-<h3>How to run it in your local/server:</h3><br>
+<h3>How to run it in your local/server:</h3>
 1. Clone the latest version <br>
 2. Update Docker/grafana_prometheus.yml for default username and password of Grafana.<br>
 3. Install the Grafana + Prometheus server  and node_exporter in local machine.<br>
