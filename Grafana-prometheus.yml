@@ -5,13 +5,9 @@
    connection: local
    tasks:
    -  name: Deploying Grafana and Prometheus server containers
-      command: sh Role/grafana-server/setup.sh {{graf_pass}}
+      shell: sh Role/grafana-server/setup.sh
+      tags: local
       
--  hosts: local
-   become: true
-   become_user: root
-   connection: local
-   tasks:
    -  name: Deploying node-exporter locally
       command: sh Role/node-exporter/setup.sh
-  
+      tags: local
