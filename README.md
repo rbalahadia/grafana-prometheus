@@ -17,3 +17,7 @@
 
 _Script for installing node_exporter to desired servers.. to follow._
 
+
+If you're having issues running this script, please raise an Issue in this repository.
+
+Thank you
