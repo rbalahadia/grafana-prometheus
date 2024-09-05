@@ -7,7 +7,7 @@ services:
       - "/opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
     ports:
       - 9090:9090
-#    network_mode: host
+    network_mode: host
   grafana:
     image: grafana/grafana
     container_name: grafana
@@ -20,4 +20,4 @@ services:
     volumes:
       - /opt/grafana/data:/var/lib/grafana:rw
       - /opt/grafana/provisioning:/etc/grafana/provisioning:rw
-#    network_mode: host
+    network_mode: host
