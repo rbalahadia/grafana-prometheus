@@ -6,3 +6,8 @@ scrape_configs:
     metrics_path: /metrics
     static_configs:
     - targets: ["localhost:9100"]
+##Template for adding external targets    
+#  - job_name: server-1
+#    metrics_path: /metrics
+#    static_configs:
+#    - targets: ["server1-ip:9100"]    

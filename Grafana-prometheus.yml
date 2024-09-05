@@ -1,5 +1,5 @@
 ---
--  hosts: local
+-  hosts: all
    become: true
    become_user: root
    connection: local
@@ -11,3 +11,16 @@
    -  name: Deploying node-exporter locally
       command: sh Role/node-exporter/setup.sh
       tags: local
+
+   -  name: Copy node-exporter script to target instances
+      template:
+        src: Role/node-exporter/setup.sh
+        dest: /root/setup.sh
+        owner: root
+        group: root
+        mode: 0755
+      tags: target_instance      
+
+   -  name: Deploying node-exporter to target instances
+      command: sh Role/node-exporter/setup.sh
+      tags: target_instance      
