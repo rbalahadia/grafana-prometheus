@@ -13,10 +13,9 @@
 4. Check localhost:3000 to access the Grafana console via browser.<br>
 5. Check localhost:9090 to access prometheus console via browser.<br>
 6. Access localhost:9100/metrics to see if node_exporter is generating metrics via browser.<br>
-7. Prometheus datasource will be automatically added to the sources.
-![image](https://github.com/user-attachments/assets/ae8c9477-6b63-41de-98b7-94ced240b7f7)
-
-8. A dashboard will be automatically created based on https://grafana.com/grafana/dashboards/1860-node-exporter-full/ dashboard.
+7. Prometheus datasource will be automatically added to the sources.<br>
+![image](https://github.com/user-attachments/assets/c52c8805-b5ba-4696-b180-cada61104134)
+8. A dashboard will be automatically created based on https://grafana.com/grafana/dashboards/1860-node-exporter-full/ dashboard.<br>
 ![image](https://github.com/user-attachments/assets/2826fc03-b074-4578-bb2e-c01796049822)
 
 
