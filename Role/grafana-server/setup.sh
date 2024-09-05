@@ -6,6 +6,7 @@ echo "directories created /opt/grafana & /opt/prometheus"
 echo "moving all yaml files"
 cp Templates/Prometheus/prometheus.yml /opt/prometheus/
 cp Templates/Grafana/Dashboard.yml /opt/grafana/provisioning/dashboards/
+cp Templates/Grafana/default-dashboard.json /opt/grafana/provisioning/dashboards/
 cp Templates/Grafana/Datasources.yml /opt/grafana/provisioning/datasources/
 #echo "creating Docker swarm"
 #docker swarm init
