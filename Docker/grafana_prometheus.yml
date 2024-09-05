@@ -7,7 +7,7 @@ services:
       - "/opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
     ports:
       - 9090:9090
-    network_mode: host
+#    network_mode: host
   grafana:
     image: grafana/grafana
     container_name: grafana
@@ -18,5 +18,6 @@ services:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
     volumes:
-      - /opt/grafana:/var/lib/grafana:rw
-    network_mode: host
+      - /opt/grafana/data:/var/lib/grafana:rw
+      - /opt/grafana/provisioning:/etc/grafana/provisioning:rw
+#    network_mode: host
